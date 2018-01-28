@@ -46,8 +46,6 @@ if __name__=='__main__':
     plt.rcParams['ytick.labelsize'] = 14.
     plt.rcParams['legend.fontsize'] = 12.
     plt.rcParams['figure.figsize'] = [15., 15.]
-    # print(data)
-    # print(data[3][0])
-    # plt.clf()
+
     data[2].value_counts().plot(kind='barh', rot=0)
     plt.show()
