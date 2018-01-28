@@ -86,8 +86,6 @@ class ShowData(object):
         data = data.groupby(0).mean()
         # 索引改变,取值方式改变
         data = list(map(lambda x: (data.index[x], data[1].values[x]), range(len(data))))
-        # print(data)
-
         attr, value = self.geo.cast(data)
         #去掉空白字符
         city_list=[]
