@@ -10,7 +10,7 @@ class LagouSpider(CrawlSpider):
     start_urls = ['https://www.lagou.com/']
     custom_settings = {
         'COOKIES_ENABLED': False,
-        'DOWNLOAD_DELAY': 3,
+        'DOWNLOAD_DELAY': 2,
         'DOWNLOADER_MIDDLEWARES': {
             'LagouView.middlewares.LagouRandomUserAgentMiddleware': 1,
         },
