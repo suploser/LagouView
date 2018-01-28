@@ -29,23 +29,24 @@ def get_data():
     data = pd.read_csv(csv_path, header=None ,encoding='utf-8')
     return data
 if __name__=='__main__':
-    data = get_data()
-    import os
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import jieba
-    from wordcloud import WordCloud
-    import matplotlib as mpl
-    # mpl.use('TkAgg')
-    from pyecharts import Geo
-
-    mpl.rcParams['font.sans-serif'] = ['SimHei']
-
-    plt.rcParams['axes.labelsize'] = 16.
-    plt.rcParams['xtick.labelsize'] = 14.
-    plt.rcParams['ytick.labelsize'] = 14.
-    plt.rcParams['legend.fontsize'] = 12.
-    plt.rcParams['figure.figsize'] = [15., 15.]
-
-    data[2].value_counts().plot(kind='barh', rot=0)
-    plt.show()
+    get_cookies()
+    # data = get_data()
+    # import os
+    # import numpy as np
+    # import matplotlib.pyplot as plt
+    # import jieba
+    # from wordcloud import WordCloud
+    # import matplotlib as mpl
+    # # mpl.use('TkAgg')
+    # from pyecharts import Geo
+    #
+    # mpl.rcParams['font.sans-serif'] = ['SimHei']
+    #
+    # plt.rcParams['axes.labelsize'] = 16.
+    # plt.rcParams['xtick.labelsize'] = 14.
+    # plt.rcParams['ytick.labelsize'] = 14.
+    # plt.rcParams['legend.fontsize'] = 12.
+    # plt.rcParams['figure.figsize'] = [15., 15.]
+    #
+    # data[2].value_counts().plot(kind='barh', rot=0)
+    # plt.show()
