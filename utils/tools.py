@@ -85,6 +85,9 @@ class ShowData(object):
         data = pd.DataFrame(data)
         data = data.groupby(0).mean()
         # 索引改变,取值方式改变
+        print(data[1].values)
+        print(data.values)
+        print(data.index)
         data = list(map(lambda x: (data.index[x], data[1].values[x]), range(len(data))))
         attr, value = self.geo.cast(data)
         #去掉空白字符
