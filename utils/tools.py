@@ -24,8 +24,8 @@ def get_cookies():
     brower = webdriver.Firefox()
     brower.get('https://passport.lagou.com/login/login.html')
     time.sleep(10)
-    brower.find_element_by_css_selector('input[placeholder="请输入常用手机号/邮箱"]').send_keys('18728899376')
-    brower.find_element_by_css_selector('input[placeholder="请输入密码"]').send_keys('1321131987')
+    brower.find_element_by_css_selector('input[placeholder="请输入常用手机号/邮箱"]').send_keys('')
+    brower.find_element_by_css_selector('input[placeholder="请输入密码"]').send_keys('')
     brower.find_element_by_css_selector('input.btn.btn_green.btn_active.btn_block.btn_lg').click()
     cookies = brower.get_cookies()
     cookies_dict = {}
